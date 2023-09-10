@@ -3,7 +3,9 @@
 # Part 1
 
 def sum(arr)
-  # YOUR CODE HERE
+  sum = 0
+  arr.each { |a| sum+=a }
+  sum
 end
 
 def max_2_sum(arr)

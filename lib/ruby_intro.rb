@@ -20,6 +20,15 @@ end
 
 def sum_to_n?(arr, number)
   # YOUR CODE HERE
+  arr.each_with_index do |x, i|
+    (i + 1...arr.length).each do |j|
+      y = arr[j]
+      if x + y == number
+        return true
+      end
+    end
+  end
+  return false
 end
 
 # Part 2

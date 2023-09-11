@@ -45,6 +45,7 @@ end
 
 def binary_multiple_of_4?(string)
   # YOUR CODE HERE
+  /^[01]*00$/.match?(string) || string == '0'
 end
 
 # Part 3
